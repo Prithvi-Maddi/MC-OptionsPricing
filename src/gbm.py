@@ -12,7 +12,7 @@ def simulate_terminal(S0: float, r:float, sigma: float, T: float, steps: int) ->
     dt = T/steps
     drift = (r - 0.5*sigma*sigma) *dt
     vol = sigma * math.sqrt(dt)
-    s = S0
+    S = S0
     for i in range(steps):
         Z = box_muller()
         S *= math.exp(drift + vol*Z)

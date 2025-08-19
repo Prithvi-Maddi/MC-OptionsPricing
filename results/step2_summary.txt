@@ -1,0 +1,8 @@
+Parameters:
+  S0=100.0, K=100.0, r=0.02, sigma=0.2, T=1.0, steps=252, n_paths=20000
+
+Black–Scholes (call): 8.916037
+Monte Carlo (naive): 8.753485
+SE: 0.096960
+95% CI: (8.563443, 8.943527)
+Runtime (s): 1.377
