@@ -5,7 +5,7 @@ Built from scratch in **Python** (with NumPy + C++ implementations), this projec
 
 ---
 
-##Features
+## Features
 
 - **Naive Monte Carlo (Python loops)**  
   - Path-by-path simulation of GBM (geometric Brownian motion) stock paths.  
