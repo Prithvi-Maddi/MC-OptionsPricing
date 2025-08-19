@@ -5,4 +5,4 @@ Black–Scholes (call): 8.916037
 Monte Carlo (naive): 8.753485
 SE: 0.096960
 95% CI: (8.563443, 8.943527)
-Runtime (s): 1.377
+Runtime (s): 1.353

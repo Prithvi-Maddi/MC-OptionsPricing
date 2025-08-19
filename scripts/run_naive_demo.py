@@ -29,14 +29,14 @@ def main():
         f"95% CI: ({res['ci_low']:.6f}, {res['ci_high']:.6f})\n"
         f"Runtime (s): {res['elapsed_s']:.3f}\n"
     )
-    (outdir / "step2_summary.txt").write_text(summary)
+    (outdir / "naive_summary.txt").write_text(summary)
 
-    with (outdir / "step2_summary.csv").open("w", newline="") as f:
+    with (outdir / "naive_summary.csv").open("w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["S0","K","r","sigma","T","steps","n_paths","call","bs_price","mc_price","se","ci_low","ci_high","elapsed_s"])
         w.writerow([S0,K,r,sigma,T,steps,n_paths,call,bs,res["mc_price"],res["se"],res["ci_low"],res["ci_high"],res["elapsed_s"]])
 
-    (outdir / "step2_summary.json").write_text(json.dumps({
+    (outdir / "naive_summary.json").write_text(json.dumps({
         "params": {"S0":S0,"K":K,"r":r,"sigma":sigma,"T":T,"steps":steps,"n_paths":n_paths,"call":call},
         "black_scholes": bs,
         "monte_carlo": res
