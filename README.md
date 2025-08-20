@@ -25,3 +25,21 @@ Built from scratch in **Python** (with NumPy + C++ implementations), this projec
   - Fully isolated Python virtual environment.  
   - Dependencies tracked in `requirements.txt`.  
   - Results saved to `results/*.csv` and visualizations/plots in `results/*.png`.
+
+---
+## Setup
+
+1. Clone repo and create venv:
+   ```bash
+   git clone https://github.com/<your-username>/MC-optionspricing.git
+   cd MC-optionspricing
+   python -m venv .venv
+   source .venv/bin/activate
+
+2. Install dependencies:
+   ```bash
+    pip install --upgrade pip
+    pip install -r requirements.txt
+3. Run Tests:
+   ```bash
+   PYTHONPATH=$(pwd) python -m pytest -q
